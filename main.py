@@ -27,6 +27,24 @@ def es_generala(conteo):
             return True
     return False
 
+def es_poker(conteo):
+    for cantidad in conteo:
+        if cantidad == 4:
+            return True
+    return False
+
+def es_full(conteo):
+    hay_tres = False
+    hay_dos = False
+
+    for cantidad in conteo:
+        if cantidad == 3:
+            hay_tres = True
+        if cantidad == 2:
+            hay_dos = True
+
+    return hay_tres and hay_dos
+
 def main():
     dados = tirar_dados(5)
     print("Dados:", dados)
