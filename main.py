@@ -45,12 +45,27 @@ def es_full(conteo):
 
     return hay_tres and hay_dos
 
+def es_escalera(dados):
+    dados_ordenados = sorted(dados)
+
+    if dados_ordenados == [1,2,3,4,5]:
+        return True
+    if dados_ordenados == [2,3,4,5,6]:
+        return True
+
+    return False
+
+
 def main():
     dados = tirar_dados(5)
     print("Dados:", dados)
-    
+
     conteo = contar_dados(dados)
-    print("Conteo:", conteo)
+
+    print("Generala:", es_generala(conteo))
+    print("Poker:", es_poker(conteo))
+    print("Full:", es_full(conteo))
+    print("Escalera:", es_escalera(dados))
     
 # No cambiar a partir de aqui
 if __name__ == "__main__":
