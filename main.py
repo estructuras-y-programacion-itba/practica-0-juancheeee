@@ -13,10 +13,20 @@ def tirar_dados(cantidad):
     
     return dados
 
+def contar_dados(dados):
+    conteo = [0,0,0,0,0,0]
+
+    for dado in dados:
+        conteo[dado-1] += 1
+
+    return conteo
+
 def main():
     dados = tirar_dados(5)
     print("Dados:", dados)
     
+    conteo = contar_dados(dados)
+    print("Conteo:", conteo)
     
 # No cambiar a partir de aqui
 if __name__ == "__main__":
