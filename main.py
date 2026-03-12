@@ -21,6 +21,12 @@ def contar_dados(dados):
 
     return conteo
 
+def es_generala(conteo):
+    for cantidad in conteo:
+        if cantidad == 5:
+            return True
+    return False
+
 def main():
     dados = tirar_dados(5)
     print("Dados:", dados)
