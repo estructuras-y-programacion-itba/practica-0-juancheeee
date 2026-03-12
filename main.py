@@ -13,7 +13,6 @@ def tirar_dados(cantidad):
     
     return dados
 
-
 def main():
     # Aqui ejecutas tus soluciones
     print(hola_mundo())
