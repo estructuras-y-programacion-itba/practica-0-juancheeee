@@ -14,10 +14,10 @@ def tirar_dados(cantidad):
     return dados
 
 def main():
-    # Aqui ejecutas tus soluciones
-    print(hola_mundo())
-
-
+    dados = tirar_dados(5)
+    print("Dados:", dados)
+    
+    
 # No cambiar a partir de aqui
 if __name__ == "__main__":
     main()
